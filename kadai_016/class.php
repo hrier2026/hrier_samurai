@@ -14,7 +14,7 @@
               $this->name = $name;
               $this->price = $price;
             }
-            public function show_price(int $price) {
+            public function show_price() {
               echo $this->price . '<br>';
             }
           }
@@ -23,12 +23,12 @@
             private $name;
             private $height;
             private $weight;
-            public function construct(string $name, int $height, int $weight) {
+            public function __construct(string $name, int $height, int $weight) {
               $this->name = $name;
               $this->height = $height;
               $this->weight = $weight;
             }
-            public function show_height(int $height) {
+            public function show_height() {
               echo $this->height . '<br>';
             }
           }
